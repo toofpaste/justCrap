@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="cs/styles.css">
+  <title>Bank Account</title>
+</head>
+<body>
+  <header class="header-class">
+    <ul class="nav">
+      <li class="nav-item">
+        Active
+      </li>
+      <li class="nav-item">
+        Link
+      </li>
+      <li class="nav-item">
+        Link
+      </li>
+      <li class="nav-item">
+        Disabled
+      </li>
+    </ul>
+  </header>
+
+  <div class="container">
+
+    <form id="findAcc">
+      <div class="formGroup2">
+        <label for="accNum">Account Number: </label>
+        <input type="number" id="accNum" >
+      </div>
+    </form>
+  </div>
+
+  <div class="row">
+
+
+    <div id="formOne"class="col-md-3">
+      <form id="input-accounts">
+
+        <div class="formGroup">
+          <label for="name">Name: </label>
+          <input type="text" id="name">
+        </div>
+        <div class="formGroup">
+          <label for="initial">Initial Deposit: </label>
+          <input type="number" id="initial" >
+        </div>
+        <button type="submit" name="button" class = "btn btn-info" id = "btn-reg">Register</button>
+      </form>
+    </div>
+
+
+
+
+    <div id="formTwo"class="col-md-3">
+      <form id="input-modify">
+
+        <div class="formGroup">
+          <label for="deposit">Deposit Amount: </label>
+          <input type="number" id="deposit">
+        </div>
+        <div class="formGroup">
+          <label for="withdraw">Withdrawal Amount: </label>
+          <input type="number" id="withdraw">
+
+        </div>
+        <button  type="button" name="button" class = "btn btn-success" id = "btn-with">Modify Amount</button>
+      </form>
+    </div>
+
+  </div>
+  <button  type="button" name="button" class = "btn btn-success" id = "btn-print">Print</button>
+  <div id="show-accountA">
+    <h2>Hello <span id=show-name></span></h2>
+    <p>Here is the account details for account# <span id="show-account"></span></p>
+    <p>Account Total: <span id="show-bal" ></span></p>
+  </div>
+</body>
+</html>
